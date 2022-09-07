@@ -10,8 +10,8 @@
          $comisiones = (int) $_POST['comisiones'];
          $libranza = (int) $_POST['libranza'];
          
-         $total_salario = (salario_mensual / 30);
-         $total_salario = ($total_salario * $dias_laborados);
+         $total_salario = ($salario_mensual / 30);
+         $tl_salario = ($total_salario * $dias_laborados);
          
          $HD = 1500;
          $HN = 2000;
@@ -42,9 +42,9 @@
             ],
             [
                     $nombres,
-                    $salario,
+                    $salario_mensual,
                     $dias_laborados,
-                    $total_salario,
+                    $tl_salario,
                     $hdiurnas,
                     $hnocturnas,
                     $hdominicales,
