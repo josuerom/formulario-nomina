@@ -10,8 +10,10 @@
          $comisiones = (int) $_POST['comisiones'];
          $libranza = (int) $_POST['libranza'];
          
+         
          $total_salario = ($salario_mensual / 30);
          $tl_salario = ($total_salario * $dias_laborados);
+         
          
          $HD = 1500;
          $HN = 2000;
@@ -21,7 +23,8 @@
          $VHDOM = ($hdominicales * $HDOM);
          
          $valor_total = ($VHD + $VHN + $VHDOM);
-         $total_devengado = ($salario_mensual + $valor_total);
+         $total_devengado = ($salario_mensual + $valor_total + $comisiones);
+         $salud = ($total_devengado * 0.08);
 
          $arregloNomina = [
             [
@@ -38,7 +41,8 @@
                     'Valor Total',
                     'Comisiones',
                     'Total Devengado',
-                    'Libranza'
+                    'Libranza',
+                    'Salud'
             ],
             [
                     $nombres,
@@ -55,6 +59,7 @@
                     $comisiones,
                     $total_devengado,
                     $libranza,
+                    $salud,
             ]
          ];
 
