@@ -25,10 +25,10 @@
 
          $arregloNomina = [
             [
-                    'Nombre y apellido',
-                    'Salario mensual',
-                    'Días laborados',
-                    'Total salario',
+                    'Nombre y Apellido',
+                    'Salario Mensual',
+                    'Días Laborados',
+                    'Total Salario',
                     'Horas Diurnas',
                     'Horas Nocturnas',
                     'Horas Dominicales',
